@@ -1,0 +1,150 @@
+/* Carlito Connect — black and red stream landing page */
+
+:root {
+  --red: #ed1c24;
+  --black: #050505;
+  --panel: #101010;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  width: min(95%, 700px);
+  margin: 20px auto 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  width: 100%;
+  background: var(--panel);
+  border: 2px solid var(--red);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(237, 28, 36, 0.12);
+}
+
+/* Top image panel */
+.artwork-panel {
+  min-height: 180px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stream-artwork {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+/* Middle video panel */
+.video-panel {
+  min-height: 300px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #080808;
+}
+
+.intro-video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  border-radius: 7px;
+}
+
+.video-note {
+  margin: 0;
+  color: #999999;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Bottom stream details — centred horizontally and vertically */
+.stream-details {
+  min-height: 220px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stream-details h1 {
+  margin: 0 0 12px;
+  color: var(--red);
+  font-size: clamp(25px, 5vw, 34px);
+  text-transform: uppercase;
+}
+
+.stream-details p {
+  margin: 4px 0;
+  color: var(--white);
+  font-size: clamp(21px, 4vw, 27px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Small Carlito Connect logo — no extra panel or large gap */
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 4px;
+  margin-top: -10px;
+}
+
+.site-footer img {
+  display: block;
+  width: 100px;
+  max-width: 30%;
+  height: auto;
+}
+
+/* Phone-sized screens */
+@media (max-width: 500px) {
+  .page {
+    width: 96%;
+    margin-top: 12px;
+    gap: 18px;
+  }
+
+  .artwork-panel {
+    min-height: 145px;
+    padding: 12px;
+  }
+
+  .video-panel {
+    min-height: 220px;
+    padding: 14px;
+  }
+
+  .stream-details {
+    min-height: 190px;
+    padding: 18px;
+  }
+
+  .site-footer img {
+    width: 88px;
+  }
+}
