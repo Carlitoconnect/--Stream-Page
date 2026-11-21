@@ -1,20 +1,23 @@
 # Carlito Connect Stream Page
 
-A simple mobile-friendly landing page for your Sunday stream.
+A simple mobile-friendly landing page for your Carlito Connect stream.
 
 ## Files and folders
 
 - `index.html` — page structure
 - `style.css` — black and red styling
-- `images/pokemon-dragonball-placeholder.svg` — temporary top-panel artwork
+- `images/top-banner.png` — the image shown in the top panel; replace this with your own image
 - `images/carlito-logo.png` — your Carlito Connect mascot logo
 - `videos/stream-intro.mp4` — add your own introduction video here
 
-## Add your own artwork
+## Add your own image to the top panel
 
-1. Put your combined Pokémon x Dragon Ball image in the `images` folder.
-2. Either name it `pokemon-dragonball.png` and change the image filename in `index.html`, or overwrite the placeholder SVG and keep the existing `src`.
-3. The image is contained within the top panel so it will not stretch out of shape.
+1. Open the project folder, then open the `images` folder.
+2. Replace `top-banner.png` with your own image.
+3. Give your image the exact filename `top-banner.png` (make sure Windows has not added `.jpg` or another extension).
+4. Refresh the website. The image will fit inside the top red-bordered panel without being stretched.
+
+You can use a PNG, JPG, or WebP image. If your image is a JPG or WebP, either save/export it as PNG named `top-banner.png`, or change the filename in the `src` line in `index.html` to match your image.
 
 ## Add your video
 
@@ -47,4 +50,4 @@ You can then point your printed QR code at that published address.
 
 ## Editing stream details
 
-Open `index.html` and change `Sunday 8pm`, `Sealed`, `Slabs`, or `Raw Singles` to update the details.
+Open `index.html` and change `Monday 9.30pm`, `Rip N Ship`, or `eBay Live` to update the details.

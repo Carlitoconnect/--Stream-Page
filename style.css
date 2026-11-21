@@ -97,12 +97,30 @@ body {
   text-transform: uppercase;
 }
 
+.stream-details .stream-line {
+  display: block;
+  visibility: visible;
+  margin: 6px 0;
+  color: var(--white);
+  font-size: clamp(21px, 4vw, 27px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .stream-details p {
   margin: 4px 0;
   color: var(--white);
   font-size: clamp(21px, 4vw, 27px);
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.one-pound-start {
+  margin: 6px 0 !important;
+  color: var(--white) !important;
+  font-size: clamp(30px, 6vw, 42px) !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px;
 }
 
 /* Small Carlito Connect logo — no extra panel or large gap */
